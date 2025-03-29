@@ -7,11 +7,11 @@
 
     <!-- Menu -->
     <ul class="flex gap-8 text-gray-700 font-medium text-lg">
-      <li><a href="/" class="hover:text-blue-500 transition">Trang chủ</a></li>
-      <li><a href="#danhMucSP" class="hover:text-blue-500 transition">Sản phẩm</a></li>
-      <li><a href="#dotGiamGia" class="hover:text-blue-500 transition">Sự kiện</a></li>
-      <li><a href="#phieuGiamGia" class="hover:text-blue-500 transition">Voucher</a></li>
-      <li><a href="#hoTro" class="hover:text-blue-500 transition">Hỗ trợ</a></li>
+      <li><router-link to="#/" class="hover:text-blue-500 transition">Trang chủ</router-link></li>
+      <li><router-link to="#/danhMucSP" class="hover:text-blue-500 transition">Sản phẩm</router-link></li>
+      <li><router-link to="#/dotGiamGia" class="hover:text-blue-500 transition">Sự kiện</router-link></li>
+      <li><router-link to="#/phieuGiamGia" class="hover:text-blue-500 transition">Voucher</router-link></li>
+      <li><router-link to="#/hoTro" class="hover:text-blue-500 transition">Hỗ trợ</router-link></li>
     </ul>
     <!-- Buttons -->
     <div class="flex items-center gap-4">
