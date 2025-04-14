@@ -1,18 +1,20 @@
 <template>
-  <div id="slideshow" class="min-h-screen bg-blue-50">
-    <Slideshow />
-  </div>
-  <div id="danhMucSP" class="min-h-screen">
-    <DanhMucSP />
-  </div>
-  <div id="phieuGiamGia" class="min-h-screen">
-    <PhieuGiamGia />
-  </div>
-  <div id="dotGiamGia" class="min-h-screen">
-    <DotGiamGia />
-  </div>
-  <div id="hoTro" class="min-h-screen">
-    <HoTro />
+  <div class="min-h-screen bg-blue-50">
+    <section id="slideshow">
+      <Slideshow />
+    </section>
+    <section id="danhMucSP">
+      <DanhMucSP />
+    </section>
+    <section id="phieuGiamGia">
+      <PhieuGiamGia />
+    </section>
+    <section id="dotGiamGia">
+      <DotGiamGia />
+    </section>
+    <section id="hoTro">
+      <HoTro />
+    </section>
   </div>
 </template>
 

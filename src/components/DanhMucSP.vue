@@ -1,29 +1,39 @@
 <template>
-  <section class="py-12 px-6 bg-gradient-to-b from-blue-100 to-white">
+  <section class="py-20 px-6 bg-gradient-to-b from-blue-100 to-white">
     <!-- Danh mục sản phẩm -->
-    <h2 class="text-3xl font-bold text-center text-blue-900 mb-8">Danh mục Laptop</h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-      <router-link v-for="category in categories" :key="category.name" :to="`/category/${category.slug}`"
-        class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center text-center">
-        <img :src="category.image" :alt="category.name" class="w-32 object-cover mb-3" />
+    <h2 class="text-4xl font-bold text-center text-blue-900 mb-14 tracking-tight">Danh mục Laptop</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <router-link
+        v-for="category in categories"
+        :key="category.name"
+        :to="`/category/${category.slug}`"
+        class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-6 flex flex-col items-center text-center border border-transparent hover:border-blue-400 hover:-translate-y-1 hover:scale-[1.02] duration-300"
+      >
+        <img
+          :src="category.image"
+          :alt="category.name"
+          class="w-24 h-24 object-cover rounded-full mb-4 ring-2 ring-blue-300 shadow-md"
+        />
         <h3 class="text-blue-900 font-semibold text-lg">{{ category.name }}</h3>
       </router-link>
     </div>
 
     <!-- Sản phẩm bán chạy -->
-    <h2 class="text-3xl font-bold text-center text-blue-900 mt-16 mb-6">Sản phẩm bán chạy</h2>
+    <h2 class="text-4xl font-bold text-center text-blue-900 mt-24 mb-12 tracking-tight">Sản phẩm bán chạy</h2>
     <SanPhamBanChay :products="bestSellers" />
 
     <!-- Xem tất cả sản phẩm -->
-    <div class="mt-8 text-center">
-      <router-link to="/SanPham"
-        class="text-blue-600 font-semibold text-lg hover:underline hover:text-blue-800 transition"
+    <div class="mt-14 text-center">
+      <router-link
+        to="/SanPham"
+        class="inline-block px-6 py-2 border-2 border-blue-600 text-blue-600 font-semibold rounded-full hover:bg-blue-600 hover:text-white transition duration-300"
       >
         Xem tất cả sản phẩm &rarr;
       </router-link>
     </div>
   </section>
 </template>
+
 <script>
 import SanPhamBanChay from "./SanPhamBanChay.vue";
 

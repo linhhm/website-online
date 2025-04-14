@@ -15,7 +15,7 @@
         <img
           :src="event.image"
           :alt="event.title"
-          class="w-full h-48 object-cover rounded-lg shadow-md"
+          class="w-full h-48 object-contain rounded-lg shadow-md"
         >
         <h3 class="mt-4 text-2xl font-semibold">{{ event.title }}</h3>
         <p class="mt-2 text-gray-600">{{ event.description }}</p>
@@ -48,7 +48,7 @@ export default {
           discount: 50,
           price: "14.990.000",
           originalPrice: "29.990.000",
-          image: "https://source.unsplash.com/400x300/?shopping",
+          image: "https://cdn.tgdd.vn/Products/Images/44/316941/msi-gaming-gf63-thin-12uc-i7-887vn-glr-2-750x500.jpg",
           link: "/",
           cta: "Xem chi tiết",
           deadline: "30/11/2025"
@@ -60,7 +60,7 @@ export default {
           discount: 30,
           price: "20.990.000",
           originalPrice: "29.990.000",
-          image: "https://source.unsplash.com/400x300/?discount",
+          image: "https://cdn.tgdd.vn/Products/Images/44/322072/lenovo-loq-gaming-15iax9-i5-83gs000jvn-hinh-15-750x500.jpg",
           link: "/",
           cta: "Xem chi tiết",
           deadline: "01/02/2025"
@@ -72,7 +72,7 @@ export default {
           discount: 40,
           price: "17.990.000",
           originalPrice: "29.990.000",
-          image: "https://source.unsplash.com/400x300/?electronics",
+          image: "https://cdn.tgdd.vn/Products/Images/44/328944/dell-inspiron-15-3520-i5-71043883-5-750x500.jpg",
           link: "/",
           cta: "Mua ngay",
           deadline: "12/12/2025"
