@@ -32,7 +32,7 @@
     <!-- Xem tất cả -->
     <div class="mt-10 text-center">
       <router-link
-        to="/vouchers"
+        to="/tatCaPhieuGiamGia"
         class="text-blue-600 font-semibold text-lg hover:underline hover:text-blue-800 transition"
       >
         Xem tất cả voucher &rarr;
